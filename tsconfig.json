@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "Node10",
+    "declaration": false,
+    "declarationMap": false,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "ES2023",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "allowSyntheticDefaultImports": true,
+ 
+    /* Output: */
+    "outDir": "dist",
+    "sourceMap": true,
+    "noEmitOnError": true,
+    "useDefineForClassFields": true,
+    "forceConsistentCasingInFileNames": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "incremental": true,
+ 
+    /* Prettify */
+    "pretty": true,
+    "newLine": "lf",
+    "removeComments": true,
+    "stripInternal": true,
+ 
+    /* Strictness */
+    "strict": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "exactOptionalPropertyTypes": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUncheckedIndexedAccess": true,
+ 
+    /* paths */
+    "baseUrl": ".",
+    "paths": {
+      "~/*": [
+        "./src/*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+}
