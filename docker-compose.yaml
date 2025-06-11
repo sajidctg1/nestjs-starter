@@ -1,0 +1,22 @@
+services:
+  postgres:
+    image: postgres:alpine
+    restart: always
+    container_name: nestjs-starter-db
+    shm_size: 128mb
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - "5432:5432"
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    networks:
+      - nestjs-starter
+
+volumes:
+  db-data:
+
+networks:
+  nestjs-starter:
